@@ -135,8 +135,7 @@ section.right {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: right;
-  margin: 0.5em;
-  margin-right: 1em;
+  margin: 0.7em;
   background-color: white;
   height: 96.5vh;
   border-radius: 20px;
@@ -331,7 +330,7 @@ section.right .content .button-add button {
   width: 5%;
   height: 25%;
   position: absolute;
-  left: 46%;
+  left: 44%;
   top: 0em;
 }
 /*# sourceMappingURL=apps.css.map */

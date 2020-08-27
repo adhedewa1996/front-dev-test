@@ -94,8 +94,8 @@ section.left {
 
 section.right {
     grid-area: right;
-    margin: 0.5em;
-    margin-right: 1em;
+    margin: 0.7em;
+    // margin-right: 1em;
     background-color: white;
     height: 96.5vh;
     border-radius: 20px;
@@ -254,6 +254,6 @@ section.right {
     width: 5%;
     height: 25%;
     position: absolute;
-    left: 46%;
+    left: 44%;
     top: 0em;
 }

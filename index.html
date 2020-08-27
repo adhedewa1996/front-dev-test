@@ -33,7 +33,7 @@
                         </div>
                         <div class="card">
                             <img src="/images/bg2.png" alt="">
-                            <div class="overlay">CP</div>
+                            <div class="overlay ">CP</div>
                             <div class="title">Cyber Punk</div>
                         </div>
                         <div class="card">
@@ -86,6 +86,21 @@
                                     <div class="task">Create initial layout for homepage</div>
                                     <div class="status approved">Approved</div>
                                 </li>
+                                <li id="myLI">
+                                    <div class="icon"><img src="/images/check.png" alt=""></div>
+                                    <div class="task">Create initial layout for homepage</div>
+                                    <div class="status in-progress">In Progress</div>
+                                </li>
+                                <li id="myLI">
+                                    <div class="icon"><img src="/images/check.png" alt=""></div>
+                                    <div class="task">Create initial layout for homepage</div>
+                                    <div class="status in-review">In Review</div>
+                                </li>
+                                <li id="myLI">
+                                    <div class="icon"><img src="/images/check.png" alt=""></div>
+                                    <div class="task">Create initial layout for homepage</div>
+                                    <div class="status waiting">Waiting</div>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -102,6 +117,7 @@
             var input = `<div class="status approved">Approved</div>`;
             var textBaru = document.createTextNode(input);
             document.getElementById("myUL").append("myLI");
+            console.log(window.screen.height);
         }
     </script>
 </body>
