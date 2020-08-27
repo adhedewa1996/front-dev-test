@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST FRONT DEV</title>
+    <link rel="stylesheet" href="css/apps.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="left">
+            <div class="logo"> <img src="/images/logo.png" alt="logo"> </div>
+            <div class="content">
+                <div class="welcome">
+                    <div class="name">Hi Samantha</div>
+                    <h4>Welcome back to workspace, we missed You!</h4>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="Search Task Or Project...">
+                </div>
+                <div class="project">
+                    <div class="title">
+                        <div class="name">Projects</div>
+                        <div class="count">(13)</div>
+                    </div>
+                    <div class="project">
+                        <div class="card">
+                            <img src="/images/bg1.png" alt="">
+                            <div class="overlay">GH</div>
+                            <div class="title">Green House</div>
+                        </div>
+                        <div class="card">
+                            <img src="/images/bg2.png" alt="">
+                            <div class="overlay">CP</div>
+                            <div class="title">Cyber Punk</div>
+                        </div>
+                        <div class="card">
+                            <img src="/images/bg3.png" alt="">
+                            <div class="overlay">EC</div>
+                            <div class="title">Easy Crypso</div>
+                        </div>
+                        <div class="card">
+                            <img src="/images/bg4.png" alt="">
+                            <div class="overlay">TA</div>
+                            <div class="title">Travel App</div>
+                        </div>
+                        <div class="card">
+                            <img src="/images/bg5.png" alt="">
+                            <div class="overlay">LP</div>
+                            <div class="title">Landing Page</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="right">
+            <div class="content">
+                <div class="top">
+                    <div class="bagian1">
+                        <div class="left">Cyber Punk</div>
+                        <div class="right">
+                            <div class="photo">
+                                <div><img src="/images/photo1.jpg" alt=""></div>
+                                <div><img src="/images/photo2.jpg" alt=""></div>
+                                <div><img src="/images/photo3.jpg" alt=""></div>
+                            </div>
+                            <div class="button"> + </div>
+                        </div>
+                    </div>
+                    <div class="subtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="bagian1">
+                        <div class="title"> Today </div>
+                        <div class="menu"> <img src="/images/menu1.png" alt=""> </div>
+                    </div>
+                    <div class="list">
+                        <div class="item">
+                            <ul id="myUL">
+                                <li id="myLI">
+                                    <div class="icon"><img src="/images/check.png" alt=""></div>
+                                    <div class="task">Create initial layout for homepage</div>
+                                    <div class="status approved">Approved</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="test"></div>
+                <div class="button-add"> <button onclick="newElement()"> + </button> </div>
+            </div>
+        </section>
+    </div>
+    <div class="randomthing"><img src="/images/random1.png" alt=""></div>
+    <div class="randomthing2"><img src="/images/random2.png" alt=""></div>
+    <script>
+        function newElement() {
+            var input = `<div class="status approved">Approved</div>`;
+            var textBaru = document.createTextNode(input);
+            document.getElementById("myUL").append("myLI");
+        }
+    </script>
+</body>
+
+</html>

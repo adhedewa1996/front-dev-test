@@ -1,0 +1,337 @@
+body {
+  background-color: #262A41;
+  height: 500hv;
+  overflow: hidden;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "left right";
+  height: auto;
+  position: absolute;
+}
+
+section.left {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: left;
+  margin: 0.5em;
+}
+
+section.left .content {
+  margin: 7em 10em;
+  height: 70vh;
+}
+
+section.left .content .welcome .name {
+  font-size: 45px;
+  color: white;
+}
+
+section.left .content .welcome h4 {
+  color: #56596B;
+}
+
+section.left .content .search {
+  margin: 2em 0em 4em 0em;
+}
+
+section.left .content .search input {
+  width: 90%;
+  height: 50px;
+  background-color: #56596B;
+  border: 0px solid;
+  border-radius: 20px;
+  color: white;
+  background-image: url(/images/search.png);
+  background-position: 20px center;
+  background-size: 25px;
+  background-repeat: no-repeat;
+  padding: 10px 5px 10px 30px;
+  text-indent: 40px;
+}
+
+section.left .content .search input:focus {
+  outline: none;
+}
+
+section.left ::-webkit-input-placeholder {
+  color: white;
+}
+
+section.left :-ms-input-placeholder {
+  color: white;
+}
+
+section.left ::-ms-input-placeholder {
+  color: white;
+}
+
+section.left ::placeholder {
+  color: white;
+}
+
+section.left .project {
+  width: 100%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+section.left .project .title {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+section.left .project .title .name {
+  color: white;
+}
+
+section.left .project .title .count {
+  margin-left: 10px;
+  color: #56596B;
+}
+
+section.left .project .project {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  -ms-flex: 1 20%;
+      flex: 1 20%;
+}
+
+section.left .project .project .card {
+  width: 100px;
+  margin-right: 3em;
+  margin-bottom: 3em;
+  text-align: center;
+}
+
+section.left .project .project .card .title {
+  color: white;
+}
+
+section.left .project .project .card .overlay {
+  color: white;
+  position: relative;
+  bottom: 60px;
+  font-weight: bolder;
+}
+
+section.right {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: right;
+  margin: 0.5em;
+  margin-right: 1em;
+  background-color: white;
+  height: 96.5vh;
+  border-radius: 20px;
+}
+
+section.right .content {
+  margin: 5em;
+  width: 85%;
+  height: 85%;
+}
+
+section.right .content .top {
+  width: 100%;
+  height: 15%;
+}
+
+section.right .content .top .bagian1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.right .content .top .bagian1 .left {
+  color: #262A41;
+  font-size: 38px;
+  font-weight: bolder;
+}
+
+section.right .content .top .bagian1 .right {
+  text-align: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+section.right .content .top .bagian1 .right .photo {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+section.right .content .top .bagian1 .right .photo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: 2.5px solid white;
+  position: relative;
+  float: left;
+  margin: 0 0 0 -10px;
+}
+
+section.right .content .top .bagian1 .right .button {
+  margin: 9px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  border: 2px solid #C5C6CC;
+  border-radius: 30px;
+  font-size: 25px;
+  color: #C5C6CC;
+}
+
+section.right .content .top .subtitle {
+  color: #C5C6CC;
+}
+
+section.right .content .bottom {
+  width: 800px;
+}
+
+section.right .content .bottom .bagian1 {
+  margin-top: 2em;
+  margin-bottom: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.right .content .bottom .bagian1 .title {
+  color: #262A41;
+  font-size: 28px;
+  font-weight: bolder;
+}
+
+section.right .content .bottom .bagian1 .menu {
+  color: #262A41;
+}
+
+section.right .content .bottom .list .item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+section.right .content .bottom .list .item ul {
+  list-style-type: none;
+  display: block;
+}
+
+section.right .content .bottom .list .item li {
+  margin: 0.3em 0.3em 0.3em -2.5em;
+  list-style-type: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+section.right .content .bottom .list .item .icon {
+  width: 50px;
+}
+
+section.right .content .bottom .list .item .task {
+  width: 600px;
+  height: 30px;
+  vertical-align: middle;
+  line-height: 30px;
+}
+
+section.right .content .bottom .list .item .status {
+  text-align: center;
+  width: 150px;
+  height: 30px;
+  vertical-align: middle;
+  line-height: 30px;
+  border-radius: 30px;
+}
+
+section.right .content .bottom .list .item .approved {
+  background-color: #E0F5F4;
+  color: #90D9D8;
+}
+
+section.right .content .bottom .list .item .in-progress {
+  background-color: #E3EFFD;
+  color: #78AEF4;
+}
+
+section.right .content .bottom .list .item .in-review {
+  background-color: #FDEEE8;
+  color: #F3A489;
+}
+
+section.right .content .bottom .list .item .waiting {
+  background-color: #ECEEF0;
+  color: #B2B9C2;
+}
+
+section.right .content .button-add button {
+  position: absolute;
+  bottom: 3em;
+  right: 2em;
+  width: 50px;
+  height: 50px;
+  background-color: #894FC6;
+  border-radius: 12px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+  font-size: 20px;
+  color: white;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+.logo {
+  margin: 1em;
+}
+
+.logo img {
+  width: 5%;
+  height: auto;
+}
+
+.randomthing {
+  width: 15%;
+  height: 10%;
+  position: absolute;
+  left: 11em;
+  bottom: 0em;
+}
+
+.randomthing2 {
+  width: 5%;
+  height: 25%;
+  position: absolute;
+  left: 46%;
+  top: 0em;
+}
+/*# sourceMappingURL=apps.css.map */
